@@ -151,13 +151,16 @@
 // }
 
 
-function createCounter() {
-    var val = 0
-    return {
-        increment() { val++ },
-        getVal() { return val }
-    }
-}
+// function createCounter() {
+//     var val = 0
+//     return {
+//         increment() { val++ },
+//         getVal() { return val }
+//     }
+// }
 
-var counter = createCounter()
-console.log(counter)
+// var counter = createCounter()
+// counter.increment()
+// console.log(counter.getVal())
+
+
