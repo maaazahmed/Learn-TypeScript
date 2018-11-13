@@ -106,3 +106,16 @@
 //     innnerfunc()
 // }
 // func("My name is Maaz Ahmed")
+
+
+
+// function func (name){
+//     var nameVal = name;
+//     // console.log(nameVal)
+//     return function(){
+//         console.log(nameVal)
+//     }
+// }
+
+//  var innnerfunc = func("Maaz Ahmed")
+// innnerfunc()
