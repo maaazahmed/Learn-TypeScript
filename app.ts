@@ -133,31 +133,31 @@
 
 //     let counter = createCounter();
 
-    // counter.increment();
-    // console.log(counter.getVal()); // 1
+// counter.increment();
+// console.log(counter.getVal()); // 1
 
 
-    // function createCounter (){
-    //     let  val = 0
-    //     return {
-    //         increment (){val++},
-    //         getVal(){ return val }
-    //     }
-    // }
-    // let counter = createCounter()
-    // for (let i = 0; i < 10; i++) {
-    //     counter.increment()
-    //     console.log(counter.getVal())      
-    // }
-    
+// function createCounter (){
+//     let  val = 0
+//     return {
+//         increment (){val++},
+//         getVal(){ return val }
+//     }
+// }
+// let counter = createCounter()
+// for (let i = 0; i < 10; i++) {
+//     counter.increment()
+//     console.log(counter.getVal())      
+// }
 
-    function createCounter (){
-        var val = 0
-        return {
-            increment (){ val++ }
-            getVal(){return val}
-        }
+
+function createCounter() {
+    var val = 0
+    return {
+        increment() { val++ },
+        getVal() { return val }
     }
+}
 
-    var counter = createCounter()
-    // console.log(counter())
+var counter = createCounter()
+console.log(counter)
