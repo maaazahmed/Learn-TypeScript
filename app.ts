@@ -98,12 +98,11 @@
 
 
 
-
-function func(param) {
-    var paramVal = param;
-    function innnerfunc() {
-        console.log(paramVal)
-    }
-    innnerfunc()
-}
-func("My name is Maaz Ahmed")
+// function func(param) {
+//     var paramVal = param;
+//     function innnerfunc() {
+//         console.log(paramVal)
+//     }
+//     innnerfunc()
+// }
+// func("My name is Maaz Ahmed")
