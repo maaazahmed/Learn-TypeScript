@@ -1,10 +1,7 @@
 // var a = "12345"
 // var b = 12
 // console.log(a + b)
-
 // console.log({ a: 123 } == { a: 123 }); // False
-
-
 // function createCounter() {
 //     let val = 0;
 //     return {
@@ -17,10 +14,8 @@
 // console.log(counter.getVal()); // 1
 // counter.increment();
 // console.log(counter.getVal()); // 2
-
 // class Point {
 //     constructor(public x: number, public y: number) {
-
 //     }
 //     add(point: Point) {
 //         return new Point(this.x + point.x, this.y + point.y);
@@ -30,51 +25,31 @@
 // var p2 = new Point(10, 20);
 // var p3 = p1.add(p2); // { x: 10, y: 30 }
 // var inc = x => x+1;
-
-
 // var a = ["a"];
 // var b = ["b"]
 // console.log(a + b)
-
-
 // var a = {}
 // var b = []
 // console.log(a + b)
-
-
-
 // var a = {}
 // var b = {}
 // console.log(a + b)
-
-
-
 // var a = "Hello"
 // var b = 1
 // console.log(a - b)
-
-
 // function add(a, b) {
 //     return (
 //         a + b
 //     )
 // }
-
 // const a =  add()
 // console.log(a)
-
-
-
 // console.log("" == 0)
 // console.log(0 == "")
-
 // var a = {}
 // var b = a;
 // a.n = "Maaz"
 // console.log(b.n)
-
-
-
 // function add() {
 //     console.log(this.add)
 // }
@@ -83,9 +58,6 @@
 //     add
 // }
 // bar.add()
-
-
-
 // function func(param) {
 //     var paramVal = param
 //      function innnerfunc() {
@@ -93,11 +65,7 @@
 //     }
 //     innnerfunc()
 // }
-
 // func("ELLo World")
-
-
-
 // function func(param) {
 //     var paramVal = param;
 //     function innnerfunc() {
@@ -106,9 +74,6 @@
 //     innnerfunc()
 // }
 // func("My name is Maaz Ahmed")
-
-
-
 // function func (name){
 //     var nameVal = name;
 //     // console.log(nameVal)
@@ -116,13 +81,8 @@
 //         console.log(nameVal)
 //     }
 // }
-
 //  var innnerfunc = func("Maaz Ahmed")
 // innnerfunc()
-
-
-
-
 //   function createCounter() {
 //       let val = 0;
 //       return {
@@ -130,13 +90,9 @@
 //          getVal() { return val }
 //        }
 //   }
-
 //     let counter = createCounter();
-
 // counter.increment();
 // console.log(counter.getVal()); // 1
-
-
 // function createCounter (){
 //     let  val = 0
 //     return {
@@ -149,9 +105,6 @@
 //     counter.increment()
 //     console.log(counter.getVal())      
 // }
-
-
-
 // var Point = (function () {
 //     function Point(x, y) {
 //         this.x = x;
@@ -162,9 +115,6 @@
 //     };
 //     return Point;
 // })();
-
-
-
 // class Point {
 //     x: number;
 //     y: number;
@@ -179,10 +129,6 @@
 //     var p1 = new Point(0, 10);
 //     var p2 = new Point(10, 20);
 //     var p3 = p1.add(p2); // {x:10,y:30}
-
-
-
-
 // function createCounter() {
 //     var val = 0
 //     return {
@@ -190,7 +136,6 @@
 //         getVal() { return val }
 //     }
 // }
-
 // var counter = createCounter()
 // counter.increment()
 // console.log(counter.getVal())
@@ -208,19 +153,16 @@
 // console.log(counter.getVal())
 // console.log(.1 + .2)
 // console.log({ max: Number.MAX_SAFE_INTEGER, min: Number.MIN_SAFE_INTEGER });
-
-
-class Point {
-    x: number;
-    y: number;
-    constructor(x: number, y: number) {
+var Point = /** @class */ (function () {
+    function Point(x, y) {
         this.x = x;
         this.y = y;
     }
-    add(point: Point) {
+    Point.prototype.add = function (point) {
         return new Point(this.x + point.x, this.y + point.y);
-    }
-}
+    };
+    return Point;
+}());
 var p1 = new Point(0, 10);
 var p2 = new Point(10, 20);
-var p3 = p1.add(p2); 
+var p3 = p1.add(p2);
