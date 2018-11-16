@@ -153,16 +153,113 @@
 // console.log(counter.getVal())
 // console.log(.1 + .2)
 // console.log({ max: Number.MAX_SAFE_INTEGER, min: Number.MIN_SAFE_INTEGER });
-var Point = /** @class */ (function () {
-    function Point(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-    Point.prototype.add = function (point) {
-        return new Point(this.x + point.x, this.y + point.y);
-    };
-    return Point;
-}());
-var p1 = new Point(0, 10);
-var p2 = new Point(10, 20);
-var p3 = p1.add(p2);
+// class Point {
+//     x: number;
+//     y: number;
+//     constructor(x: number, y: number) {
+//         this.x = x;
+//         this.y = y;
+//         console.log(this.x, this.y)
+//     }
+//     add(point: Point) {
+//         return new Point(this.x + point.x, this.y + point.y);
+//     }
+// }
+// var p1 = new Point(0, 10);
+// var p2 = new Point(10, 20);
+// var p3 = p1.add(p2); // {x:10,y:30}
+// console.log(p3)
+// class MyName {
+//     _1st_name;
+//     _2nd_name;
+//     constructor(_1st_name: string, _2nd_name: string) {
+//         this._1st_name = _1st_name;
+//         this._2nd_name = _2nd_name;
+//     }
+//     currentName() {
+//         return this._1st_name + this._2nd_name
+//     }
+// }
+// var fullName = new MyName("Maaz ", "Ahmed")
+// var fullName2 = new MyName("Aslam ", "Khan")
+// var fullNam3 = new MyName("Aalam ", "Khan")
+// console.log(fullName.currentName())
+// console.log(fullName2.currentName())
+// console.log(fullNam3.currentName())
+// class Name {
+//     a: string;
+//     b: string;
+//     constructor(a: string, b: string) {
+//         this.a = a;
+//         this.b = b
+//     }
+//     printName() {
+//         return this.a + this.b
+//     }
+// }
+// var n1 = new Name("Name ", "1")
+// var n2 = new Name("Name ","2")
+// var n3 = new Name("Name ", "3")
+// console.log(n1.printName())
+// **************************************************
+// **************************************************
+// **************************************************
+// **************************************************
+// class Point {
+//     x: number;
+//     y: number;
+//     constructor(x: number, y: number) {
+//         this.x = x;
+//         this.y = y;
+//     }
+//     add(point: Point) {
+//         return new Point(this.x + point.x, this.y + point.y);
+//     }
+// }
+// var p1 = new Point(0, 10);
+// var p2 = new Point(10, 20);
+// // var p3 = p1.add(p2); // {x:10,y:30}
+// // console.log(p3)
+// class Point3D extends Point {
+//     z: number;
+//     constructor(x: number, y: number, z: number) {
+//         super(x, y);
+//         this.z = z;
+//         console.log(x, y, z)
+//     }
+//     add(point: Point3D) {
+//         console.log(point, "302")
+//         var point2D = super.add(point);
+//         return new Point3D(point2D.x, point2D.y, this.z + point.z);
+//     }
+// }
+// var pa = new Point3D(0, 1, 2);
+// var pB = new Point3D(0, 1, 2);
+// pB.add(pa)
+// **************************************************
+// **************************************************
+// **************************************************
+// **************************************************
+// class Something {
+//     static instances = 0
+//     constructor() {
+//         Something.instances++
+//     }
+// }
+// var s1 = new Something()
+// var s2 = new Something()
+// console.log(Something.instances)
+// class FooBase {
+//     public x: number;
+//     private y: number;
+//     protected z: number
+// }
+// var foo = new FooBase()
+// class FooChild  extends FooBase {
+//     constructor(){
+//         super()
+//         this.x;
+//         this.y;
+//         this.z
+//     }
+// }
